@@ -9,19 +9,24 @@ repos:
     rev: v4.0.1
     hooks:
       - id: trailing-whitespace
+        stages: [commit]
   - repo: https://github.com/ambv/black
     rev: 21.12b0
     hooks:
       - id: black
+        stages: [commit]
   - repo: https://github.com/pycqa/isort
     rev: 5.10.1
     hooks:
       - id: isort
+        stages: [commit]
   - repo: https://github.com/pycqa/flake8
     rev: 4.0.1
     hooks:
       - id: flake8
+        stages: [commit]
   - repo: https://github.com/pycqa/bandit
     rev: 1.7.1
     hooks:
       - id: bandit
+        stages: [commit]
