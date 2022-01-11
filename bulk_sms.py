@@ -2,7 +2,7 @@
 
 import sys
 from enum import IntEnum
-from typing import List, Optional, Tuple, Iterable
+from typing import Iterable, List, Optional, Tuple
 
 import click
 import phonenumbers
@@ -107,10 +107,9 @@ def main(
 ):
     """
     A simple tool to send SMS messages over the carrier's network from an Android phone
-    using the Android Debug Bridge. First of all, install the "Messages" application
-    (See: https://play.google.com/store/apps/details?id=com.google.android.apps.messaging).
-    Then, before the script start, enable USB debugging and Stay awake in developer
-    options. Finally, copy a message to the clipboard. Enjoy!
+    using the Android Debug Bridge. First of all, install the Messages application
+    from the Google Play. Then, before the script start, enable USB debugging and Stay
+    awake in developer options. Finally, copy a message to the clipboard. Enjoy!
     """
 
     phone_numbers = get_phone_numbers(phone_number)
