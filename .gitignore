@@ -1,3 +1,10 @@
+*.egg
+*.egg-info
+.eggs
 .idea
-.vscode
 .venv
+.vscode
+build
+dist
+eggs
+sdist
