@@ -10,6 +10,9 @@ phonenumbers = ">=8.12.41"
 tqdm = ">=4.62.3"
 
 [dev-packages]
-pre-commit = "*"
+bandit = "*"
 black = "*"
 flake8 = "*"
+isort = "*"
+pre-commit = "*"
+tox = "*"
