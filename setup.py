@@ -4,9 +4,8 @@ import sys
 
 from setuptools import setup
 
-assert sys.version_info >= (3, 7), "bulk-sms requires Python 3.7+"
+assert sys.version_info >= (3, 7), "bulk-sms requires Python 3.7+"  # nosec
 from pathlib import Path  # noqa E402
-
 
 CURRENT_DIR = Path(__file__).parent
 sys.path.insert(0, str(CURRENT_DIR))  # for setuptools.build_meta
