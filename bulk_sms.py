@@ -9,10 +9,6 @@ import phonenumbers
 from com.dtmilano.android.viewclient import ViewClient
 from tqdm import tqdm
 
-# ------------------------------------------------------------------------------------ #
-# Package & Identifiers
-# ------------------------------------------------------------------------------------ #
-
 MESSAGES_PACKAGE = "com.google.android.apps.messaging"
 CONFIRM_ID = "android:id/button1"
 DELETE_CHAT_ID = f"{MESSAGES_PACKAGE}:id/action_delete"
@@ -21,8 +17,6 @@ MESSAGE_ID = f"{MESSAGES_PACKAGE}:id/compose_message_text"
 RECIPIENT_ID = f"{MESSAGES_PACKAGE}:id/recipient_text_view"
 SEND_MESSAGE_ID = f"{MESSAGES_PACKAGE}:id/send_message_button_icon"
 START_CHAT_ID = f"{MESSAGES_PACKAGE}:id/start_chat_fab"
-
-# ------------------------------------------------------------------------------------ #
 
 
 class Key(IntEnum):
