@@ -1,4 +1,8 @@
 default_stages: [ commit ]
+
+ci:
+  skip: [commitlint]
+
 repos:
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v6.0.0
