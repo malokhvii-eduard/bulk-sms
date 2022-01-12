@@ -2,7 +2,6 @@
 *.egg-info
 .eggs
 .idea
-.tox
 .venv
 .vscode
 build
