@@ -2,7 +2,7 @@
 
 import sys
 from enum import IntEnum
-from typing import Iterable, List, Optional, Tuple
+from typing import List, Optional
 
 import click
 import phonenumbers
@@ -25,22 +25,25 @@ class Key(IntEnum):
     Paste = 279
 
 
-def get_phone_numbers(lines: Iterable[str]) -> List[str]:
+def get_phone_numbers() -> List[str]:
     if sys.stdin.isatty():
+        click.secho("Oops, input is a terminal, not a pipe!", err=True)
         sys.exit(1)
 
     phone_numbers = set()
-    for line in map(lambda p: p.strip(), lines if lines else sys.stdin):
+    for line in map(lambda p: p.strip(), sys.stdin):
         try:
             phone_numbers.add(
                 phonenumbers.format_number(
-                    phonenumbers.parse(line, None), phonenumbers.PhoneNumberFormat.E164
+                    phonenumbers.parse(line, None),
+                    phonenumbers.PhoneNumberFormat.E164,
                 )
             )
         except phonenumbers.NumberParseException:
             pass
 
     if not phone_numbers:
+        click.secho("Oops, no phone numbers in E.164 format!", err=True)
         sys.exit(2)
 
     return list(sorted(phone_numbers))
@@ -84,22 +87,10 @@ def delete_last_sms(view: ViewClient):
 
 
 @click.command()
-@click.option(
-    "--phone-number",
-    "-p",
-    type=str,
-    multiple=True,
-    help=(
-        "Phone number in E.164 format. "
-        "Also, the script accepts phone numbers line by line from stdin."
-    ),
-)
 @click.option("--serialno", "-s", help="The device or emulator serial number.")
 @click.option("--draft", "-d", is_flag=True, help="Save SMS as Draft.")
 @click.option("--delete", "-x", is_flag=True, help="Delete SMS after sending.")
-def main(
-    phone_number: Tuple[str, ...], serialno: Optional[str], draft: bool, delete: bool
-):
+def main(serialno: Optional[str], draft: bool, delete: bool):
     """
     A simple tool to send SMS messages over the carrier's network from an
     Android phone using the Android Debug Bridge. Firstly you will need to
@@ -111,7 +102,7 @@ def main(
     enough credit to send SMS. Enjoy!
     """
 
-    phone_numbers = get_phone_numbers(phone_number)
+    phone_numbers = get_phone_numbers()
 
     view = ViewClient(*ViewClient.connectToDeviceOrExit(serialno=serialno))
     open_messages(view)
