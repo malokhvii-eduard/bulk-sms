@@ -100,10 +100,14 @@ def main(
     phone_number: Tuple[str, ...], serialno: Optional[str], draft: bool, delete: bool
 ):
     """
-    A simple tool to send SMS messages over the carrier's network from an Android phone
-    using the Android Debug Bridge. First of all, install the Messages application
-    from the Google Play. Then, before the script start, enable USB debugging and Stay
-    awake in developer options. Finally, copy a message to the clipboard. Enjoy!
+    A simple tool to send SMS messages over the carrier's network from an
+    Android phone using the Android Debug Bridge. Firstly you will need to
+    install Android Debug Bridge and Messages application from Google Play.
+    Next, you will need to turn on Developer Options on your Android phone.
+    After the Developer Options are enabled, turn on Stay Awake and USB
+    Debugging. Finally, plug your phone into your computer using a USB cable,
+    copy a message to the clipboard on your phone and check that you have
+    enough credit to send SMS. Enjoy!
     """
 
     phone_numbers = get_phone_numbers(phone_number)
