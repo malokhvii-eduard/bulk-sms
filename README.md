@@ -24,7 +24,42 @@
   </p>
 </div>
 
-:construction: Coming soon...
+## 🎉 Features
+
+- 🗜️ Small (~126 lines)
+- 🐍 Pure Python tool
+- 🔌 Working with multiple devices
+
+## 🌻 Motivation
+
+Probably just for fun at first 🙃. Secondly, for low-cost SMS marketing
+campaigns without any equipment or external services.
+
+### 📚 Prerequisites
+
+Firstly you will need to install [Android Debug Bridge][android-adb] and
+[Messages][google-play-messages] application from Google Play. Next, you
+will need to turn on [Developer Options][android-developer-options] on your
+Android phone. After the Developer Options are enabled, turn on Stay Awake and
+[USB Debugging][android-debugging]. Finally, plug your phone into your computer
+using a USB cable, copy a message to the clipboard on your phone and check that
+you have enough credit to send SMS 😅, so here we go! 🚀.
+
+### 📦 Installation
+
+1. Clone the *Repository*
+2. Install this *Package* (`./setup.py install`) or install dependencies from
+[Pipfile](Pipfile) (`pipenv install`)
+
+### 👀 Usage
+
+```console
+bulk-sms --help # Show help and exit
+bulk-sms -p "+380500412697" -p "+380500447879" # Send multiple
+bulk-sms -d -p "+380500412697" # Save SMS as Draft
+bulk-sms -x -p "+380500412697" # Delete SMS after sending
+cat phones.txt | bulk-sms # Send multiple from file
+```
 
 ## 🛠️ Tech Stack
 
@@ -80,6 +115,10 @@ for more information.
 [github]: https://github.com
 
 <!-- Other links -->
+[android-adb]: https://developer.android.com/studio/command-line/adb
+[android-debugging]: https://developer.android.com/studio/debug/dev-options#debugging
+[android-developer-options]: https://developer.android.com/studio/debug/dev-options#enable
 [editorconfig]: https://editorconfig.org
 [git-scm]: https://git-scm.com
+[google-play-messages]: https://play.google.com/store/apps/details?id=com.google.android.apps.messaging&hl=en_US&gl=US
 [shields]: https://shields.io
