@@ -55,10 +55,10 @@ you have enough credit to send SMS 😅, so here we go! 🚀.
 
 ```console
 bulk-sms --help # Show help and exit
-bulk-sms -p "+380500412697" -p "+380500447879" # Send multiple
+bulk-sms -p "+380500412697" -p "+380500447879" # Send multiple SMS
+cat phones.txt | bulk-sms # Send multiple SMS from file
 bulk-sms -d -p "+380500412697" # Save SMS as Draft
 bulk-sms -x -p "+380500412697" # Delete SMS after sending
-cat phones.txt | bulk-sms # Send multiple from file
 ```
 
 ## 🛠️ Tech Stack
