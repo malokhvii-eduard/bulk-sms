@@ -35,6 +35,8 @@
 Probably just for fun at first 🙃. Secondly, for low-cost SMS marketing
 campaigns without any equipment or external services.
 
+## ✨ Getting Started
+
 ### 📚 Prerequisites
 
 Firstly you will need to install [Android Debug Bridge][android-adb] and
