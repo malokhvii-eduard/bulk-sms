@@ -26,7 +26,7 @@
 
 ## 🎉 Features
 
-- 🗜️ Small (~122 lines)
+- 🗜️ Small (~121 lines)
 - 🐍 Pure Python tool
 - 🔌 Working with multiple devices
 
