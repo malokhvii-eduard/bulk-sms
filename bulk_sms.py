@@ -27,7 +27,7 @@ class Key(IntEnum):
 
 def get_phone_numbers() -> List[str]:
     if sys.stdin.isatty():
-        click.secho("Oops, input is a terminal, not a pipe!", err=True)
+        click.echo("Oops, input is a terminal, not a pipe!", err=True)
         sys.exit(1)
 
     phone_numbers = set()
@@ -43,7 +43,7 @@ def get_phone_numbers() -> List[str]:
             pass
 
     if not phone_numbers:
-        click.secho("Oops, no phone numbers in E.164 format!", err=True)
+        click.echo("Oops, no phone numbers in E.164 format!", err=True)
         sys.exit(2)
 
     return list(sorted(phone_numbers))
