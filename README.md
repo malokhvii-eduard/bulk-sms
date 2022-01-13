@@ -26,7 +26,7 @@
 
 ## 🎉 Features
 
-- 🗜️ Small (~130 lines)
+- 🗜️ Small (~122 lines)
 - 🐍 Pure Python tool
 - 🔌 Working with multiple devices
 
@@ -53,12 +53,13 @@ you have enough credit to send SMS 😅, so here we go! 🚀.
 
 ### 👀 Usage
 
-```console
+```bash
 bulk-sms --help # Show help and exit
-bulk-sms -p "+380500412697" -p "+380500447879" # Send multiple SMS
 cat phones.txt | bulk-sms # Send multiple SMS from file
-bulk-sms -d -p "+380500412697" # Save SMS as Draft
-bulk-sms -x -p "+380500412697" # Delete SMS after sending
+echo "+380500412697\n+380500447879" | bulk-sms # Send multiple SMS
+echo "+380500412697" | bulk-sms -d # Save SMS as Draft
+echo "+380500412697" | bulk-sms -x # Delete SMS after sending
+echo "+380500412697" | bulk-sms -s XXXXXXXXXXXXXX # Set device serial number
 ```
 
 ## 🛠️ Tech Stack
