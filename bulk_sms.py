@@ -87,6 +87,7 @@ def delete_last_sms(view: ViewClient):
 @click.option(
     "--phone-number",
     "-p",
+    type=str,
     multiple=True,
     help=(
         "Phone number in E.164 format. "
