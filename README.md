@@ -29,6 +29,8 @@
 - 🗜️ Small (~121 lines)
 - 🐍 Pure Python
 - 🔌 Working with multiple devices
+- 📌 Save SMS as Draft
+- 🔥 Delete SMS after sending
 
 ## 🌻 Motivation
 
