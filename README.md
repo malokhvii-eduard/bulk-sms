@@ -59,10 +59,10 @@ you have enough credit to send SMS 😅, so here we go! 🚀.
 
 ```bash
 bulk-sms --help # Show help and exit
-echo "+380500412697\n+380500447879" | bulk-sms # Send multiple SMS
-echo "+380500412697" | bulk-sms -d # Save SMS as Draft
-echo "+380500412697" | bulk-sms -x # Delete SMS after sending
-echo "+380500412697" | bulk-sms -s XXXXXXXXXXXXXX # Set device serial number
+echo "+380XXXXXXXXX\n+380XXXXXXXX1" | bulk-sms # Send multiple SMS, E.164 format
+echo "+380XXXXXXXXX" | bulk-sms -d # Save SMS as Draft
+echo "+380XXXXXXXXX" | bulk-sms -x # Delete SMS after sending
+echo "+380XXXXXXXXX" | bulk-sms -s XXXXXXXXXXXXXX # Set device serial number
 ```
 
 ## 🛠️ Tech Stack
