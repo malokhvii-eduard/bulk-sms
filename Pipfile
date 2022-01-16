@@ -4,10 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-androidviewclient = ">=20.4.4"
-click = ">=8.0.3"
-phonenumbers = ">=8.12.41"
-tqdm = ">=4.62.3"
+androidviewclient = "~=20.4.4"
+click = "~=8.0.3"
+phonenumbers = "~=8.12.41"
+tqdm = "~=4.62.3"
 
 [dev-packages]
 bandit = "*"
@@ -15,3 +15,6 @@ black = "*"
 flake8 = "*"
 isort = "*"
 pre-commit = "*"
+
+[pipenv]
+allow_prereleases = true
