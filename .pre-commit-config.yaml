@@ -16,7 +16,7 @@ repos:
       - id: markdownlint
         name: check markdown
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.27.1
+    rev: v1.28.0
     hooks:
       - id: yamllint
         name: check yaml
@@ -41,7 +41,7 @@ repos:
       - id: bandit
         name: security audit for python
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.0.0
+    rev: v9.1.0
     hooks:
       - id: commitlint
         name: check commit
