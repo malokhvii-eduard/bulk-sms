@@ -44,6 +44,6 @@ repos:
     rev: v9.1.0
     hooks:
       - id: commitlint
-        name: check commit
+        name: check commit message
         stages: [commit-msg]
         additional_dependencies: ["@commitlint/config-conventional"]
