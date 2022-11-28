@@ -5,7 +5,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -21,7 +21,7 @@ repos:
       - id: yamllint
         name: check yaml
   - repo: https://github.com/pycqa/flake8
-    rev: 5.0.4
+    rev: 6.0.0
     hooks:
       - id: flake8
         name: check python style and quality
@@ -41,7 +41,7 @@ repos:
       - id: bandit
         name: security audit for python
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.1.0
+    rev: v9.3.0
     hooks:
       - id: commitlint
         name: check commit message
