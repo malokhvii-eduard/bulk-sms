@@ -26,12 +26,12 @@ repos:
       - id: flake8
         name: check python style and quality
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 22.12.0
     hooks:
       - id: black
         name: format python
   - repo: https://github.com/pycqa/isort
-    rev: 5.10.1
+    rev: 5.11.0
     hooks:
       - id: isort
         name: sort python imports
