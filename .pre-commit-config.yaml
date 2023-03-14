@@ -36,7 +36,7 @@ repos:
       - id: isort
         name: sort python imports
   - repo: https://github.com/pycqa/bandit
-    rev: 1.7.4
+    rev: 1.7.5
     hooks:
       - id: bandit
         name: security audit for python
