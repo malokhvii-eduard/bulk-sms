@@ -15,6 +15,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-3178C6?style=flat)](LICENSE)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][github-pre-commit]
+[![pre-commit.ci](https://results.pre-commit.ci/badge/github/malokhvii-eduard/bulk-sms/master.svg)][pre-commit.ci]
 [![Style Guide](https://img.shields.io/badge/code%20style-black-000?style=flat)][github-black]
 [![markdownlint](https://img.shields.io/badge/linter-markdownlint-000?style=flat)][github-markdownlint]
 [![commitlint](https://img.shields.io/badge/linter-commitlint-F7B93E?style=flat)][github-commitlint]
@@ -125,4 +126,5 @@ for more information.
 [editorconfig]: https://editorconfig.org
 [git-scm]: https://git-scm.com
 [google-play-messages]: https://play.google.com/store/apps/details?id=com.google.android.apps.messaging&hl=en_US&gl=US
+[pre-commit.ci]: https://results.pre-commit.ci/run/github/445843563/1679432325.1lqWuWpOSVe1numM6-SY-A
 [shields]: https://shields.io
