@@ -16,7 +16,7 @@ repos:
       - id: markdownlint
         name: check markdown
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.30.0
+    rev: v1.31.0
     hooks:
       - id: yamllint
         name: check yaml
