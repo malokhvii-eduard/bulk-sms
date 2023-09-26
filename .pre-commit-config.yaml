@@ -11,7 +11,7 @@ repos:
       - id: end-of-file-fixer
       - id: check-shebang-scripts-are-executable
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.35.0
+    rev: v0.37.0
     hooks:
       - id: markdownlint
         name: check markdown
@@ -21,12 +21,12 @@ repos:
       - id: yamllint
         name: check yaml
   - repo: https://github.com/pycqa/flake8
-    rev: 6.0.0
+    rev: 6.1.0
     hooks:
       - id: flake8
         name: check python style and quality
   - repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: 23.9.1
     hooks:
       - id: black
         name: format python
