@@ -11,12 +11,12 @@ repos:
       - id: end-of-file-fixer
       - id: check-shebang-scripts-are-executable
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.37.0
+    rev: v0.38.0
     hooks:
       - id: markdownlint
         name: check markdown
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.32.0
+    rev: v1.33.0
     hooks:
       - id: yamllint
         name: check yaml
@@ -26,22 +26,22 @@ repos:
       - id: flake8
         name: check python style and quality
   - repo: https://github.com/psf/black
-    rev: 23.9.1
+    rev: 23.11.0
     hooks:
       - id: black
         name: format python
   - repo: https://github.com/pycqa/isort
-    rev: 5.12.0
+    rev: 5.13.0
     hooks:
       - id: isort
         name: sort python imports
   - repo: https://github.com/pycqa/bandit
-    rev: 1.7.5
+    rev: 1.7.6
     hooks:
       - id: bandit
         name: security audit for python
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.5.0
+    rev: v9.10.0
     hooks:
       - id: commitlint
         name: check commit message
