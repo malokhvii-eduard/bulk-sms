@@ -5,13 +5,13 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-shebang-scripts-are-executable
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.39.0
+    rev: v0.40.0
     hooks:
       - id: markdownlint
         name: check markdown
@@ -26,7 +26,7 @@ repos:
       - id: flake8
         name: check python style and quality
   - repo: https://github.com/psf/black
-    rev: 24.3.0
+    rev: 24.4.2
     hooks:
       - id: black
         name: format python
@@ -41,7 +41,7 @@ repos:
       - id: bandit
         name: security audit for python
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.13.0
+    rev: v9.16.0
     hooks:
       - id: commitlint
         name: check commit message
