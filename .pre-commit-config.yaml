@@ -21,7 +21,7 @@ repos:
       - id: yamllint
         name: check yaml
   - repo: https://github.com/pycqa/flake8
-    rev: 7.0.0
+    rev: 7.1.0
     hooks:
       - id: flake8
         name: check python style and quality
@@ -36,7 +36,7 @@ repos:
       - id: isort
         name: sort python imports
   - repo: https://github.com/pycqa/bandit
-    rev: 1.7.8
+    rev: 1.7.9
     hooks:
       - id: bandit
         name: security audit for python
