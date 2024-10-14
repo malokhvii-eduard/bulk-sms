@@ -1,17 +1,17 @@
-default_stages: [commit]
+default_stages: [pre-commit]
 
 ci:
   skip: [commitlint]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-shebang-scripts-are-executable
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.41.0
+    rev: v0.42.0
     hooks:
       - id: markdownlint
         name: check markdown
@@ -21,12 +21,12 @@ repos:
       - id: yamllint
         name: check yaml
   - repo: https://github.com/pycqa/flake8
-    rev: 7.0.0
+    rev: 7.1.1
     hooks:
       - id: flake8
         name: check python style and quality
   - repo: https://github.com/psf/black
-    rev: 24.4.2
+    rev: 24.10.0
     hooks:
       - id: black
         name: format python
@@ -36,12 +36,12 @@ repos:
       - id: isort
         name: sort python imports
   - repo: https://github.com/pycqa/bandit
-    rev: 1.7.8
+    rev: 1.7.10
     hooks:
       - id: bandit
         name: security audit for python
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v9.16.0
+    rev: v9.18.0
     hooks:
       - id: commitlint
         name: check commit message
