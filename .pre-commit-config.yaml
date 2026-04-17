@@ -1,5 +1,8 @@
 default_stages: [pre-commit]
 
+default_language_version:
+  python: python3.10
+
 ci:
   skip: [commitlint]
 
